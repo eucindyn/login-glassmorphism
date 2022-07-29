@@ -88,6 +88,7 @@ section {
     width: 60px;
     height: 60px;
 }
+
 .container {
     position: relative;
     width: 400px;
@@ -138,40 +139,45 @@ section {
 .form .inputBox input {
     width: 100%;
     background: rgba(255, 255, 255, 0.2);
-    border: none;
     outline: none;
     padding: 10px 20px;
     border-radius: 35px;
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-right: 1px solid rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    font-size: 16px;
+    font-size: 1rem;
     letter-spacing: 1px;
     color: #fff;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
 
+.form .inputBox input:focus {
+    border: 2px solid #fff;
 }
 
 .form .inputBox input::placeholder {
     color: #fff;  
 }
 
-.form .inputBox input[type="submit"] {
+.form .button {
     background: #fff;
-    color: #666;
     max-width: 100px;
     cursor: pointer;
-    margin-bottom: 20px;
+    margin: 10px 0px;
     font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border-radius: 35px;
 }
 
-.forget {
+.forget * {
     margin-top: 5px;
     color: #fff;
 }
 
 .forget a {
-    color: #fff;
     font-weight: 600;
     text-decoration: none;
 }
